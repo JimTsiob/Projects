@@ -1,0 +1,15 @@
+//Blue ray
+Movie,BLACK PANTHER,{Marvel Studios},2018,{Action,Drama,Fantasy},{Joe Robert Cole,Ryan Coogler},{Ryan Coogler},{Chadwick Boseman,Michael B. Jordan,Lupita Nyong'o,Danai Gurira},135 Minutes,true,true,1
+Movie,COCO,{Disney/Pixar},2017,{Action,Animation,Comedy,Kids & Family},{Adrian Molina,Matthew Aldrich},{Lee Unkrich,Adrian Molina},{Anthony Gonzalez,Alanna Ubach,Jaime Camil},109 Minutes,true,false,1
+//DVD
+Movie,THE RIDER,{Sony Pictures Classics},2018,{Drama},{Chloe Zhao},{Chloe Zhao},{Brady Jandreau,Tim Jandreau,Lilly Jandreau},104 Minutes,false,true,1
+Movie,CAM,{Blumhouse Productions,Divide/Conquer,Gunpowder & Sky},2018,{Horror,Mystery & Suspense},{Daniel Goldhaber,Isa Mazzei},{Daniel Goldhaber},{Devin Druid,Imani Hakim,Madeline Brewer,Melora Walters},94 Minutes,false,false,1
+//Xbox
+Game,ReCore,{Microsoft Studios},2016,{Action,Adventure,Platformer},Xbox,1
+Game,Halo 5: Guardians,{Microsoft Studios},2015,{First-person shooter},Xbox,1
+//Nintendo
+Game,Super Mario Odyssey,{Nintendo},2017,{Platformer,Adventure},Nintendo,1
+Game,The Legend of Zelda: Breath of the Wild,{Nintendo},2017,{Adventure},Nintendo,1
+//Play Station
+Game,Astro Bot: Rescue Mission,{Sony Interactive Entertainment},2018,{Platformer},Play Station,1
+Game,Sekiro: Shadows Die Twice,{Activision,FromSoftware},2019,{Action,Adventure},Play Station,1
