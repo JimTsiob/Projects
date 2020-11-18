@@ -14,7 +14,7 @@ int main(int argc,char* argv[]) {
 	float* a = new float[3]; // pinakas gia ta stoixeia tou a.
 	float* c = new float[3]; // pinakas gia ta stoixeia tou c.
 	Image item = Image(); // edw tha mpei h eikona.
-	string path = "../../../ExampleImages/";
+	string path = "ExampleImages/";
 	char* file = argv[argc - 1]; // pairnoume to arxeio.
 	string checker = file; // elegkths gia to an yparxei to arxeio h oxi.
 	size_t pos = checker.find_last_of("."); // vriskei thn teleia.
