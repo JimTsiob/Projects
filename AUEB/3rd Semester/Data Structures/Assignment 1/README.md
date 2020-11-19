@@ -1,5 +1,5 @@
 # First Data Structures assignment
-in this assignment we were tasked to implement the following :
+in this assignment we were tasked to do the following :
 
 Part A : Implement a stack and a queue using Linked Lists (StringStackImpl and StringQueueImpl files respectively).
 
