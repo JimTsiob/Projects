@@ -11,5 +11,5 @@ Fourth assignment (Exercise 4) : find the longest shortest path in a map of name
 
 Fifth assignment (Exercise 5) : find the Maximum clique in a given map (we have 2 datasets here).
 
-Instructions : download all files , compile ExercisesSet3 and run with this command : java ExercisesSet3 Exercise1.txt Exercise2.txt Exercise3.txt Ex-
+Instructions : download all files , compile ExercisesSet3 and run with this command : java ExercisesSet3 Exercise1.txt Exercise2.txt Exercise3.txt Ex
 ercise4.txt lesmiserables.txt zachary karate club.txt
