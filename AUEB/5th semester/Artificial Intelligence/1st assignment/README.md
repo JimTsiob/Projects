@@ -12,4 +12,5 @@ Any other depth might cause long waiting times as the AI searches further deep i
 Instructions :
 1. download all java files and place them in the same folder.
 2. compile and run Main.java
-3. Move inputs work as follows : 
+3. Move inputs work as follows : you input the move as shown in the icon above , rows are numbers , columns are letters
+example : row 3 col D (3D) etc like chess.
