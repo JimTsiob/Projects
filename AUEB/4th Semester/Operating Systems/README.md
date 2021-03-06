@@ -4,3 +4,4 @@ In this course we learned all the theory behind operating systems. The assignmen
 - Threads
 - Unlocking and locking mutexes
 - Making threads wait for some condition to happen
+- Thread priority
