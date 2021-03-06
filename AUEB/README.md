@@ -1,2 +1,2 @@
 # AUEB Projects
-Projects i did during my university years in a variety of courses.
+Projects and written assignments i did during my university years in a variety of courses.
