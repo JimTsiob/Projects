@@ -1,0 +1,10 @@
+﻿  main.cpp
+G:\AUEB\C++ Programming\Ergasia\telikh ergasia\imageEditor\imageEditor\mainApp\Image.h(102,23): warning C4018: '<': signed/unsigned mismatch
+G:\AUEB\C++ Programming\Ergasia\telikh ergasia\imageEditor\imageEditor\mainApp\main.cpp(56,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+G:\AUEB\C++ Programming\Ergasia\telikh ergasia\imageEditor\imageEditor\mainApp\main.cpp(71,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+G:\AUEB\C++ Programming\Ergasia\telikh ergasia\imageEditor\imageEditor\mainApp\main.cpp(75,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 342 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  mainApp.vcxproj -> G:\AUEB\C++ Programming\Ergasia\telikh ergasia\imageEditor\imageEditor\Release\filter.exe

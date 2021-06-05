@@ -1,0 +1,3 @@
+﻿  ppm.cpp
+G:\AUEB\3rd semester\C++ Programming\Ergasia\telikh ergasia\imageEditor\imageEditor\ppm\ppm.cpp(63,25): warning C4244: '=': conversion from 'float' to 'unsigned char', possible loss of data
+  ppm.vcxproj -> G:\AUEB\3rd semester\C++ Programming\Ergasia\telikh ergasia\imageEditor\imageEditor\ppm\ppm_d.lib

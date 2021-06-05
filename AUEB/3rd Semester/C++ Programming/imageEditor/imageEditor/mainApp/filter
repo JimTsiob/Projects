@@ -1,0 +1,23 @@
+Array2D Constructor called.
+Image Constructor called.
+Array2D Constructor called.
+Image Constructor called.
+file is: ../../../ExampleImages/Image06.ppm
+PPM file read.
+length is 2519040
+0.533333 0.552941 0.615686
+
+File loaded succesfully.
+path is: ../../../ExampleImages/Filtered_Image06.ppm
+a elements: -2
+c elements: 1
+a elements: -2
+c elements: 1
+a elements: -2
+c elements: 1
+Filter Constructor called.
+FilterLinear Constuctor called.
+FilterLinear operator called.
+Array2D Constructor called.
+Image Copy Constructor called.
+buffer size: 839680
