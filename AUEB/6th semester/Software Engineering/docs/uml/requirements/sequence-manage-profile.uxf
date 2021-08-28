@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>378</x>
+      <y>28</y>
+      <w>91</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Home Page UI
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>532</x>
+      <y>28</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Sign Up 
+Form UI</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>679</x>
+      <y>28</y>
+      <w>112</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Authentication
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>252</x>
+      <y>0</y>
+      <w>56</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>Developer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>273</x>
+      <y>63</y>
+      <w>21</w>
+      <h>1358</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1920.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>273</x>
+      <y>98</y>
+      <w>133</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Click on 
+lt=&lt;-
+Create account</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>406</x>
+      <y>49</y>
+      <w>21</w>
+      <h>1379</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1950.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>406</x>
+      <y>98</y>
+      <w>14</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>49</y>
+      <w>21</w>
+      <h>1372</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1940.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>728</x>
+      <y>49</y>
+      <w>21</w>
+      <h>1386</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1960.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>413</x>
+      <y>119</y>
+      <w>182</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Go to sign up form
+lt=&lt;-
+</panel_attributes>
+    <additional_attributes>240.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>273</x>
+      <y>168</y>
+      <w>329</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Enter username
+lt=&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>450.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>189</y>
+      <w>161</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>check username
+lt=&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>196</x>
+      <y>210</y>
+      <w>581</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>alt
+--
+halign=left
+valid name
+
+-.
+non valid name 
+(already in use)
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>217</y>
+      <w>168</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>valid username
+lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>273</y>
+      <w>168</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>non valid username
+lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>280</y>
+      <w>322</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>message about username
+lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;20.0;440.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>273</x>
+      <y>392</y>
+      <w>322</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Enter
+lt=&lt;&lt;&lt;-
+Password </panel_attributes>
+    <additional_attributes>440.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>406</y>
+      <w>140</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>check password
+lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;70.0;80.0;70.0;80.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>455</y>
+      <w>322</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>info about wrong password
+lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;20.0;440.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>273</x>
+      <y>518</y>
+      <w>322</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Enter
+lt=&lt;&lt;&lt;-
+Password  Again</panel_attributes>
+    <additional_attributes>440.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>539</y>
+      <w>140</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>check password
+lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;70.0;80.0;70.0;80.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>273</x>
+      <y>588</y>
+      <w>329</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>no mathcing password
+lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;20.0;450.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>217</x>
+      <y>574</y>
+      <w>420</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>opt
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>224</x>
+      <y>427</y>
+      <w>406</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>opt
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>273</x>
+      <y>721</y>
+      <w>322</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Enter
+lt=&lt;&lt;&lt;-
+other details</panel_attributes>
+    <additional_attributes>440.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>588</x>
+      <y>777</y>
+      <w>168</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Create
+lt=&lt;&lt;&lt;-
+user</panel_attributes>
+    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>861</x>
+      <y>791</y>
+      <w>119</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>_dev:Developer_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>735</x>
+      <y>798</y>
+      <w>126</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Create
+lt=&lt;-
+user</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>266</x>
+      <y>784</y>
+      <w>329</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>incorrect 
+lt=&lt;.
+details</panel_attributes>
+    <additional_attributes>10.0;20.0;450.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>574</x>
+      <y>735</y>
+      <w>140</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>check password
+lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;70.0;80.0;70.0;80.0;10.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>217</x>
+      <y>763</y>
+      <w>399</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>opt</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>847</y>
+      <w>168</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Success
+lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>273</x>
+      <y>868</y>
+      <w>322</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Successfully created
+lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;20.0;440.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>273</x>
+      <y>105</y>
+      <w>14</w>
+      <h>826</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>574</x>
+      <y>126</y>
+      <w>28</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>574</x>
+      <y>392</y>
+      <w>28</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>574</x>
+      <y>525</y>
+      <w>28</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>581</x>
+      <y>728</y>
+      <w>21</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>728</x>
+      <y>196</y>
+      <w>14</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>728</x>
+      <y>756</y>
+      <w>14</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>406</x>
+      <y>385</y>
+      <w>14</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>406</x>
+      <y>721</y>
+      <w>14</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>406</x>
+      <y>518</y>
+      <w>14</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+</diagram>

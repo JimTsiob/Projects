@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bugtracker">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BugTracker"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BugTracker">
+        <activity android:name=".view.Bug.AddEditBug.AddEditBugActivity"></activity>
+        <activity android:name=".view.Bug.BugDetails.BugDetailsActivity"></activity>
+        <activity android:name=".view.Bug.ShowBugs.ShowBugsActivity"></activity>
+        <activity android:name=".view.Component.ComponentDetails.ComponentDetailsActivity"></activity>
+        <activity android:name=".view.Component.AddEditComponent.AddEditComponentActivity"></activity>
+        <activity android:name=".view.Component.ShowComponents.ShowComponentsActivity"></activity>
+        <activity android:name=".view.Project.AddEditProject.AddEditProjectActivity"></activity>
+        <activity android:name=".view.Project.ProjectDetails.ProjectDetailsActivity"></activity>
+        <activity android:name=".view.Signup.SignupActivity"></activity>
+        <activity android:name=".view.Bug.AssignBug.AssignBugActivity"></activity>
+        <activity android:name=".view.Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.HomeActivity.HomePageActivity">
+        </activity>
+    </application>
+
+</manifest>

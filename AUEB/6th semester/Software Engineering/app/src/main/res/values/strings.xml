@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BugTracker</string>
+    <string name="txt_manage_profile">Manage Profile</string>
+    <string name="txt_view_projects">View Projects</string>
+    <string name="text_bug_name"> bug name </string>
+    <string name="text_bug_id">bug id</string>
+    <string name="text_btn_edit_bug">"Edit "</string>
+    <string name="text_bug_name_details">bug_name_in_details</string>
+    <string name="text_recview_component_name">set component name here</string>
+</resources>

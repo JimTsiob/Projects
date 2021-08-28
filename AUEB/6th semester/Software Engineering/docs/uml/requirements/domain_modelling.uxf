@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1110</x>
+      <y>530</y>
+      <w>210</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Bug
+--
+id: Integer
+name : String
+severity: String
+status : String
+issuanceDate: Date
+AssignedTo: String
+createdBy : String
+description: String
+counter: Integer
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1110</x>
+      <y>0</y>
+      <w>250</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Project
+--
+project_id: Integer
+name: String
+counter : Integer
+users : ArrayList&lt;Developer&gt;
+projectComps : ArrayList&lt;Component&gt;
+tickets : ArrayList&lt;Bug&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1110</x>
+      <y>280</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>_Component_
+--
+name: String
+compBugs : ArrayList&lt;Bug&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>300</y>
+      <w>270</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Developer
+--
+id: Integer
+username : String
+password : String
+firstName: String
+lastName : String
+email : String
+Role : String
+counter: Integer
+assignedBugs : ArrayList&lt;Bug&gt;
+assignedComps : ArrayList&lt;Component&gt;
+assignedProjects : ArrayList&lt;Project&gt;
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1000</x>
+      <y>760</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>_enumeration bug_status_
+--
+ToDo
+InProgress
+Done</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1250</x>
+      <y>760</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>_enumeration Priority_
+--
+High
+Medium
+Low
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1200</x>
+      <y>130</y>
+      <w>100</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+r1=project
+m2=0..n
+r2=components
+has</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1200</x>
+      <y>340</y>
+      <w>100</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+r1=component
+m2=0..n
+r2=bugs
+has</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>780</x>
+      <y>370</y>
+      <w>350</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..n
+r1=
+m2=1
+r2=
+is assigned to
+</panel_attributes>
+    <additional_attributes>330.0;270.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>880</x>
+      <y>890</y>
+      <w>240</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Note..
+ToDo:The issue is reported and is 
+waiting for the team to action it.
+In Progress:Issue is assigned and 
+actively worked on.
+Done:Work has finished on the issue.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>780</x>
+      <y>310</y>
+      <w>350</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+r1=
+m2=1..n
+r2=
+is assigned to
+</panel_attributes>
+    <additional_attributes>330.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>780</x>
+      <y>130</y>
+      <w>360</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+r1=
+m2=1..n
+r2=
+is assigned to</panel_attributes>
+    <additional_attributes>340.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+</diagram>
