@@ -5,3 +5,8 @@ In this assignment we were given a dataset from IMDB, which had positive and neg
 - Random Forest
 
 The algorithms had to predict if the review is positive or negative with their data being the vocabulary and the reviews. The final part included drawing conclusions with statistical analysis with graphs representing accuracy and some other metrics (Recall , Precision and F1).
+
+## Instructions
+1. Download all files in the same folder
+2. Compile and run Main.java
+3. Change the parameteres and see the different results that each algorithm has!
