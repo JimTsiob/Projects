@@ -1,0 +1,324 @@
+/*
+* Dimitrios Tsiompikas 3180223
+* Ana Lleshi 3180095
+* Elena Fourtouni 3180196
+* Petros Tsotsi 3180193
+*/
+
+Package minipython;
+
+Helpers
+	digit = ['0' .. '9'];
+	letter = ['a' .. 'z']|['A' .. 'Z']; 
+	cr = 13; 
+	underscore = '_'; // diko mas
+	lf = 10;
+	all = [0..127]; 
+	eol = lf | cr | cr lf ;
+	not_eol = [all - [cr + lf]]; 
+
+Tokens
+	tab = 9;
+	plus = '+';
+	minus = '-';
+	mod = '%';
+	mult = '*';
+	dmult = '**';
+	div = '/';
+	eq = '=';
+	eqminus = '-='; // diko mas 
+	eqdiv = '/='; // diko mas
+	exclam = '!'; 
+	dictt = 'dict';
+	def = 'def';
+	logic_plus = '&&';
+	l_par = '(';
+	r_par = ')';
+	l_br = '[';
+	r_br = ']';
+	comma=',';
+	qmark = '?';
+	gqmark = ';';
+	dot = '.'; // diko mas
+	if = 'if';
+	elif = 'elif';
+	else = 'else';
+	while = 'while';
+	for = 'for'; // diko mas
+	in = 'in'; // diko mas
+	print = 'print';
+	return = 'return';
+	assert = 'assert'; // diko mas
+	len = 'len'; // diko mas
+	max = 'max'; // diko mas
+	min = 'min'; // diko mas
+	import = 'import'; // diko mas 
+	from = 'from'; // diko mas 
+	as = 'as'; // diko mas 
+	and = 'and'; // diko mas
+	or = 'or'; // diko mas
+	not = 'not'; // diko mas
+	less = '<';
+	great = '>';
+	greateq = '>='; // diko mas
+	lesseq = '<='; // diko mas
+	diff = '!='; // diko mas
+	doubleeq = '=='; // diko mas 
+	true = 'true'; 
+	semi = ':';
+	false = 'false';
+	none = 'None'; // diko mas
+	quote = '"';
+	blank = (' ' | lf | cr);
+	line_comment = '#' not_eol* eol; 
+	number = digit+ | (digit+ '.' digit+);
+	id = (letter | underscore) (letter | digit | underscore)*; // id name can also contain underscores
+	string = '"'not_eol* '"' | '''not_eol*''';
+
+
+
+Ignored Tokens
+	blank, line_comment;
+
+
+
+
+
+Productions
+
+
+
+
+	// GOAL-------------------------------------------
+
+
+
+	goal = commands*;
+
+
+	commands = {function} function |
+			   {statement} statement;
+
+
+	// END GOAL---------------------------------------
+
+
+
+
+	// FUNCTION------------------------------------
+
+
+
+	function = def id l_par argument? r_par semi statement;
+
+
+
+
+	// END FUNCTION-------------------------------------
+
+
+
+
+
+
+	// ARGUMENT---------------------------
+
+
+	argument = param commaparam*;
+
+	commaparam = comma param;
+
+	param = id assign?;
+
+	assign = eq value;
+
+
+
+	// END ARGUMENT---------------------------
+
+
+
+
+
+
+	// STATEMENT------------------------------------
+
+
+	statement = {import} tab* import_rule |
+				{if} tab* if comparison semi statement |
+				{while} tab* while comparison semi statement |
+				{for} tab* for [id1]:id in [id2]:id semi statement |
+				{return} tab* return expression |
+				{print} tab* print arglist |
+				{commawarning} tab* id comma arglist |
+				{assign} tab* id eq expression |
+				{assignmin} tab* id eqminus expression |
+				{assigndiv} tab* id eqdiv expression |
+				{brassign} tab* id l_br [exp1]:expression r_br eq [exp2]:expression |
+				{assert} tab* assert expression commaexpr? |
+				{functioncall} tab* function_call;
+
+
+
+
+	// END STATEMENT-------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+	// EXPRESSION---------------------------------------
+	
+	basic_expression = 	{id} id |
+					    {value} value |
+					    {max} max l_par value commavalue* r_par |
+					    {min} min l_par value commavalue* r_par|
+						{brexpr} id l_br expression r_br |
+				 	    {functioncall} function_call |
+				        {lenexpr} len l_par expression r_par |
+					    {brexprs} l_br arglist r_br;
+
+
+
+	pow_expression = {smth} basic_expression |
+					    {power} pow_expression dmult basic_expression;
+
+
+
+
+	mult_div_mod_expression = {powexpr} pow_expression |
+						 {mult} mult_div_mod_expression mult pow_expression |
+						 {div} mult_div_mod_expression div pow_expression |
+						 {mod} mult_div_mod_expression mod pow_expression;
+
+
+
+	add_sub_expression = {multdivmodexpr} mult_div_mod_expression |
+							  {add} add_sub_expression plus mult_div_mod_expression |
+							  {sub} add_sub_expression minus mult_div_mod_expression;
+
+
+
+	expression = add_sub_expression;
+
+
+
+	// END EXPRESSION-------------------------------------------
+
+
+
+
+
+
+	// IMPORT - MODULE -------------------------------------------------
+
+
+	import_rule = {imp} import moduleas commamoduleas* |
+				 {from} from module import idasid commaidasid*;
+
+	commamoduleas = comma moduleas;
+
+	moduleas = module asid?;
+
+	module = iddot* id;
+	
+	commaidasid = comma idasid;
+
+	idasid = id asid?;
+
+	asid = as id;
+
+	iddot = id dot;
+
+
+
+
+	// END IMPORT - MODULE ----------------------------------------------
+
+
+
+
+
+
+
+	// COMPARISON-----------------------------------------
+
+
+
+
+	basic_comparison = {false} false |
+					    {true} true |
+					    {greater} [rce1]:expression great [rce2]:expression |
+					    {less} [rce1]:expression less [rce2]:expression |
+					    {greatereq} [rce1]:expression greateq [rce2]:expression |
+					    {lesseq} [rce1]:expression lesseq [rce2]:expression |
+					    {diff} [rce1]:expression diff [rce2]:expression |
+					    {eq} [rce1]:expression doubleeq [rce2]:expression;
+
+
+	not_comparison = {simplecomp} basic_comparison |
+						{not} not not_comparison;
+
+
+	and_comparison = {notcomp} not_comparison |
+						 {and} and_comparison and not_comparison;
+
+
+
+	or_comparison = {andcomp} and_comparison |
+								{or} or_comparison or and_comparison;
+
+
+	comparison = or_comparison;
+
+
+
+	// END COMPARISON-------------------------------------------
+
+
+
+
+
+	// FUNCTION CALL----------------------------
+
+
+	function_call = id l_par arglist? r_par;
+
+
+
+	// END FUNCTION CALL--------------------------
+
+
+
+
+
+
+	// ARGLIST------------------------------------
+
+	arglist = expression commaexpr*;
+
+	commaexpr = comma expression;
+
+
+	// END ARGLIST-------------------------------------
+
+
+
+
+
+
+	// VALUE------------------------------------------------------
+
+
+	commavalue = comma value;
+
+	value = {callonid} iddot function_call |
+			{number} number |
+			{string} string |
+			{none} none;
